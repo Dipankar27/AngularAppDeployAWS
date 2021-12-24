@@ -14,4 +14,4 @@ phases:
   post_build:
     commands:
       - echo "Updating files in S3 bucket ..."
-      - aws sync dist/covid/ s3://dipankar-covid19tracker --delete
+      - aws sync dist/AngularAppDeployAWS/ s3://dipankar-covid19tracker --delete
