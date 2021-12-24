@@ -11,7 +11,7 @@ phases:
     commands:
       - echo "Building Angular project..."
       - ng build --prod
-  post-build:
+  post_build:
     commands:
       - echo "Updating files in S3 bucket ..."
       - aws sync dist/covid/ s3://dipankar-covid19tracker --delete
