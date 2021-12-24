@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink='/'>Covid-19 Tracker</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink='/'> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="hardcodedAuthenticationSercice.isUserLoggedIn()" routerLink='home'>Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="hardcodedAuthenticationSercice.isUserLoggedIn()" routerLink='countries'>Countries</a>
+        </li>
+    <!--    <li class="nav-item">
+          <a class="nav-link" routerLink='comments'>Comment</a>
+        </li>-->
+      </ul>
+    </div>
+
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-info my-2 my-sm-0" type="submit" routerLink='logout'>Logout</button>
+    </form>
+  </nav>
