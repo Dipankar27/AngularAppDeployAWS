@@ -1,15 +1,4 @@
-# Covid
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0.
-
-# Bucket Policy for Website Hosting on AWS S3 (replace "bucket-name" with s3 bucket name of your own):
-# Covid
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0.
-
-# Bucket Policy for Website Hosting on AWS S3 (replace "bucket-name" with s3 bucket name of your own):
- 
-# Covid
+ # Covid
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0.
 
