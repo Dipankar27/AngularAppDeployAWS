@@ -1,6 +1,6 @@
  # Angular Dashboard App using Covid 19 data with user login and logout features
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0. This project was built for my own understanding of deploying Angular application on Amamzon S3 bucket and creating a CI/CD pipeline using Github and Amazon Code build. Please email me on dipankar.medhi27@gmail.com if you need help with understanding the project or need help with the bucket policy and IAM policy statement to add to the IAM role used by CodeBuild.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0. The project was built for my own understanding of deploying Angular application on Amamzon S3 bucket and creating a CI/CD pipeline using Github and Amazon Code build. Please email me on dipankar.medhi27@gmail.com if you need help with understanding the project or need help with the bucket policy and IAM policy statement to add to the IAM role used by CodeBuild.
 
 ## Development server
 
