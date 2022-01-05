@@ -13,7 +13,8 @@
    
 </div>
 <hr>
-<div class="ui form">
+
+<div class="ui form" >
   <div class="inline fields">
     <label for="fruit">Select Case Type:</label>
     <div class="field">
@@ -28,7 +29,7 @@
         <label for='d'>Deaths</label>
       </div>
     </div>
-    <div class="field">
+    <!-- <div class="field">
       <div class="ui radio checkbox">
         <input type="radio" id='r' value='r' #r (click)='updateChart(r)'  name="casetype" tabindex="0" class="hidden">
         <label for='r'>Recovered</label>
@@ -39,8 +40,9 @@
         <input type="radio" id='a' value ='a' #a (click)='updateChart(a)' name="casetype" tabindex="0" class="hidden">
         <label for='a'>Active</label>
       </div>
-    </div>
+    </div> -->
   </div>
+</div>
 
 <div class="row">
     <div class="col">
@@ -50,6 +52,7 @@
       <google-chart [type]='chart.ColumnChart' [options]='chart.options' style="width:100%;" [height]='chart.height' [data]= 'datatable'></google-chart>
     </div>
 </div>
+
 
 
 

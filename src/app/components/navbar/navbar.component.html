@@ -17,6 +17,9 @@
     <!--    <li class="nav-item">
           <a class="nav-link" routerLink='comments'>Comment</a>
         </li>-->
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="hardcodedAuthenticationSercice.isUserLoggedIn()" routerLink='gpayoption'>Payment Options</a>
+        </li>
       </ul>
     </div>
 

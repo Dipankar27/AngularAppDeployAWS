@@ -16,9 +16,9 @@
     </div>
   </div>
 
-  <app-dashboard-card [totalConfirmed]='totalConfirmed' [totalActive]='totalActive' [totalRecovered]='totalRecovered'
+  <!-- <app-dashboard-card [totalConfirmed]='totalConfirmed' [totalActive]='totalActive' [totalRecovered]='totalRecovered'
   [totalDeaths]='totalDeaths'
-  ></app-dashboard-card>
+  ></app-dashboard-card> -->
 
 
 
@@ -33,13 +33,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor= 'let cs of selectedCountryData; index as i'>
-            <td>{{i+1}}</td>
+          <!-- <ng-container *ngFor="let cs of selectedCountryData " > -->
+          <tr *ngFor='let cs of selectedCountryData| paginate: {itemsPerPage:25,currentPage:p};let i = index;'>
+            <td>{{ (p - 1) * 10 + i +1 }}</td>
             <td>{{cs.date | date}}</td>
             <td>{{cs.cases}}</td>
           </tr>
+          <!-- </ng-container> -->
         </tbody>
       </table>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
     </div>
     <!-- <div class="col">
       

@@ -13,6 +13,9 @@ import { GoogleChartsModule } from 'angular-google-charts';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { LogoutComponent } from './components/logout/logout.component';
+import { GooglePayButtonModule } from '@google-pay/button-angular';
+import { GpayoptionComponent } from './components/gpayoption/gpayoption.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -23,14 +26,17 @@ import { LogoutComponent } from './components/logout/logout.component';
     DashboardCardComponent,
     CommentsComponent,
     LoginComponent,
-    LogoutComponent
+    LogoutComponent,
+    GpayoptionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxPaginationModule,
     GoogleChartsModule,
-    FormsModule
+    FormsModule,
+    GooglePayButtonModule
     
   ],
   providers: [],
